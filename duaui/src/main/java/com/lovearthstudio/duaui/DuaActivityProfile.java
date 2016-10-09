@@ -260,7 +260,7 @@ public class DuaActivityProfile extends AppCompatActivity implements View.OnClic
         int i = v.getId();
         if (i == R.id.rl_avatar) {
             if(DuaPermissionUtil.invalidSdAndCamera(this)) {
-                DuaPermissionUtil.requestSdAndCamera(this,10086);
+                DuaPermissionUtil.requestSdAndCamera(this,100);
             }else {
                 showPhotoDialog();
             }

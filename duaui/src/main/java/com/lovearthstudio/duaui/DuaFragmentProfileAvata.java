@@ -51,7 +51,7 @@ public class DuaFragmentProfileAvata extends BackHandledFragment implements View
             activity.setCurrentFragment(new DuaFragmentProfileName(),"Name");
         }else if(i==R.id.dua_register_iv_avatar){
             if(DuaPermissionUtil.invalidSdAndCamera(getActivity())) {
-                DuaPermissionUtil.requestSdAndCamera(getActivity(),10086);
+                DuaPermissionUtil.requestSdAndCamera(getActivity(),100);
             }else {
                 activity.showPhotoDialog(userAvatar);
             }
