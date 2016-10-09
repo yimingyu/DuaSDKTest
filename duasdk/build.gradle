@@ -1,0 +1,63 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        minSdkVersion 18
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+//            dirs 'src/main/libs'
+//            dirs project(':duasdk').file('libs')
+        }
+    }
+}
+
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.android.support:support-v4:23.2.1'
+    compile 'no.nordicsemi.android.support.v18:scanner:0.2.0'
+    compile 'com.kymjs.rxvolley:rxvolley:1.0.5'
+}
+
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'DuaSdk'
+
+    publishedGroupId = 'com.lovearthstudio.android'
+
+    libraryName = 'duasdk'
+    artifact = 'duasdk'
+
+    libraryDescription = 'TimeUtil add toPromptPeriod'
+
+    siteUrl = 'https://github.com/lovearthhome/Calathus'
+    gitUrl = 'https://github.com/lovearthhome/Calathus.git'
+
+    libraryVersion = '0.5.0'
+
+    developerId = 'Mingyu Yi'
+    developerName = 'Mingyu Yi'
+    developerEmail = '461072496@qq.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

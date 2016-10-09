@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="WheelPicker-1.1.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/cn.aigestudio.wheelpicker/WheelPicker/1.1.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/cn.aigestudio.wheelpicker/WheelPicker/1.1.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.aigestudio.wheelpicker/WheelPicker/1.1.1/5b9d184b53a83255bc76088873eb290c550511a1/WheelPicker-1.1.1-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.aigestudio.wheelpicker/WheelPicker/1.1.1/5b9d184b53a83255bc76088873eb290c550511a1/WheelPicker-1.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
